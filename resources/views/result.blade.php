@@ -26,7 +26,7 @@
                     <td>{{ $component->id }}</td>
                     <td>{{ $component->firstname }}</td>
                     <td>{{ $component->lastname }}</td>
-                    <td><a href="https://space-cloud-quiz4.sgp1.digitaloceanspaces.com/quiz-4/."$component->file><i class="bi bi-eye-fill"></i></a></td>
+                    <td><a href= "{{ "https://space-cloud-quiz4.sgp1.digitaloceanspaces.com/quiz-4/" . $component->file}} "><i class="bi bi-eye-fill"></i></a></td>
                 </tr>
             @endforeach
         </table>
